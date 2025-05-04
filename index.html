@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shinde Service - Water Tank Cleaning</title>
   <style>
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -51,6 +52,7 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-size: x-large;
+      font-family: ;
     }
     
     h2 {
@@ -93,19 +95,45 @@
       font-size: large;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       border: #052065 ;
+
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    h4{
+      color: #007BFF;
     }
     
   </style>
 </head>
 <body>
-
+<div>
 <header>
   <img src="image.png" alt="Shinde Service Logo">
   <h1>Shinde Service</h1>
   <p>Professional Water Tank Cleaning – Your Health, Our Priority</p>
-  <a href="tel:+917558369247"><input type="button" class="number" value="contact now"></a>
-  
+  <strong class="call_button">
+    <a href="tel:+917558369247"><input type="button" class="number" value="contact now"></a>
+  </strong>
 </header>
+</div>
 <section class="about">
   <p>With changing times, old methods (like brushing and bleaching powder) cannot ensure complete cleanliness. Why? Because this method cannot reach the bottom and corners of the tank where dirt and bacteria collect.</p>
 <p>
@@ -115,7 +143,32 @@
     We provide professional tank cleaning services using advanced equipment. The latest technology ensures safety for your family and staff by keeping water free from germs.</p>
 </p>
   </section>
-
+  <div class="gallery">
+    <div>
+    <img src="dewatering.png" alt="Mechanized De-watering">
+    <h4>mechanized de-watering</h4>
+  </div>
+  <div>  
+  <img src="sludge.png" alt="Sludge Removal">
+    <h4>Sludge Removal</h4>
+  </div>
+  <div>
+    <img src="pressurewash.png" alt="High Pressure Cleaning">
+    <h4>High Pressure Cleaning</h4>
+  </div>
+  <div>
+    <img src="vaccum.png" alt="Vacuum Cleaning">
+    <h4>Vacuum Cleaning</h4>
+  </div>
+  <div>
+    <img src="antibacterial.png" alt="Antibacterial Spray">
+    <h4>Antibacterial Spray</h4>
+  </div>
+  <div>
+    <img src="uv.png" alt="UV Radiation Treatment">
+    <h4>UV Radiation Treatment</h4>
+  </div>
+</div>
 <section class="services">
   
   <h2>Our Services</h2>
@@ -151,29 +204,21 @@
   <p><strong>Location:</strong> Pune, Maharashtra</p>
 </section>
 <section class="form">
-  <h3><strong> contact us</strong> </h3>
+  <h2>Get service</h3>
 <form action="post">
-  <div class="form_element">
+  
     <input type="text" name="customer_name" placeholder="your name" class="form_element"><br>
-  </div>  
-  <div class="form_element">
     <input type="tel" name="customer_num" placeholder="Mobile number" class="form_element"><br>
-  </div>
-  <div class="form_element">
      <input type="text" name="customer_add" placeholder="address" class="form_element"><br>
-  </div>
-  <div class="form_element">
-    <select name="services" class="form_element"">
+    <select name="services" class="form_element">
       <option value="select">select service</option>
       <option value="Housekeeping">Housekeeping</option>
       <option value="tank_cleaning">Tank cleaning</option>
       <option value="Plumbing">Plumbing</option>
       <option value="penting">Penting</option>
       <option value="Fabrication">Fabrication work</option>
-    </select></div>
-    <div >
-    <input type="submit" value="Get call back" class="number" >
-  </div>
+    </select><br>
+    <input type="submit" value="Get call back" class="number">
 </section>
 
 </form>
