@@ -20,12 +20,12 @@
     .form_element{
       border: none;
     border-bottom: 1px solid #ccc;
-    width: 50%;
-    line-height: 29px;
+    width: 100%;
+    line-height: 50px;
     font-family: poppins;
     outline: none;
     background: #fff;
-    align: center;
+    
     }
     header img {
       width: 150px;
@@ -46,17 +46,19 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    
     .form {
       background: white;
       margin-bottom: 20px;
-      border-radius: 10px;
+      margin-left: 30%;
+      margin-right: 30%;
+      border-radius: 20px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: x-large;
-      font-family: ;
     }
     
     h2 {
       color: #007BFF;
+      text-align: center;
     }
     ul {
       padding-left: 20px;
@@ -95,6 +97,7 @@
       font-size: large;
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       border: #052065 ;
+      width: 100%;
 
     }
     .gallery {
@@ -119,6 +122,7 @@
     }
     h4{
       color: #007BFF;
+      text-align: center;
     }
     
   </style>
@@ -204,7 +208,7 @@
   <p><strong>Location:</strong> Pune, Maharashtra</p>
 </section>
 <section class="form">
-  <h2>Get service</h3>
+  <h2>Get service</h2>
 <form action="post">
   
     <input type="text" name="customer_name" placeholder="your name" class="form_element"><br>
@@ -217,9 +221,11 @@
       <option value="Plumbing">Plumbing</option>
       <option value="penting">Penting</option>
       <option value="Fabrication">Fabrication work</option>
-    </select><br>
+    </select><br><br> 
+    <div>
     <input type="submit" value="Get call back" class="number">
-</section>
+  </div>
+  </section>
 
 </form>
 
